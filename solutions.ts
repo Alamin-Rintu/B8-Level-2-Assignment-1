@@ -2,7 +2,6 @@
 const multiplyValue = (value: number, multiplier: number = 2) => {
   return value * multiplier;
 };
-// console.log(multiplyValue(7, 0));
 
 // probelm:2
 
@@ -15,7 +14,6 @@ const processInput = (value: string | number | boolean): string | number => {
     return value ? "Active" : "Inactive";
   }
 };
-// console.log(processInput(7));
 
 // probelm:3
 
@@ -25,14 +23,12 @@ const formatCoordinate = (
   const [latitude, longtitude, locationName] = coordinate;
   return `Location: ${locationName} (${latitude}, ${longtitude})`;
 };
-// console.log(formatCoordinate([22.35, 91.78, "Chittagong"]));
 
 // probelm: 4;
 
 const concatenateArrays = <T>(...arrays: T[][]): T[] => {
   return arrays.flat();
 };
-console.log(concatenateArrays([1, 2], [3, 4], [5]));
 
 // probelm:5
 
@@ -57,7 +53,6 @@ const courses = [
   { title: "Basic HTML", students: 45, isPublished: true },
   { title: "Next.js Pro", students: 85, isPublished: true },
 ];
-// console.log(getPopularCourses(courses, 80));
 
 // probelm:6
 
@@ -71,12 +66,7 @@ const users = [
   { id: 3, name: "Tariq", role: "Subscriber" },
 ];
 
-// console.log(pluckValues(users, "name"));
-
-// console.log(pluckValues(users, "id"));
-
 // Problem 7:
-
 class Employee {
   protected name: string;
   private baseSalary: number;
@@ -104,11 +94,6 @@ class Manager extends Employee {
   }
 }
 
-// const manager = new Manager("Alice", 50000, "Engineering");
-
-// console.log(manager.getDetails());
-// console.log(manager.getRoleInfo());
-
 // problem:8
 const validateAgeAsync = (age: number): Promise<string> => {
   return new Promise((resolve, reject) => {
@@ -121,5 +106,3 @@ const validateAgeAsync = (age: number): Promise<string> => {
     }
   });
 };
-// const result = await validateAgeAsync(15);
-// console.log(result);
